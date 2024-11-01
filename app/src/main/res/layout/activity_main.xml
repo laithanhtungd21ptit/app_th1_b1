@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên môn học" />
+
+        <EditText
+            android:id="@+id/editTextCredits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số tín chỉ"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Năm học" />
+
+        <EditText
+            android:id="@+id/editTextInstructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giảng viên" />
+
+        <EditText
+            android:id="@+id/editTextScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Điểm số"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Thêm môn" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Tính điểm trung bình" />
+
+        <TextView
+            android:id="@+id/textViewSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách môn học sẽ hiển thị ở đây"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điểm trung bình: "
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
